@@ -131,9 +131,8 @@ static NSString * const kCellIdentifier = @"movieCell";
 - (UIImageView *)logo {
     if (!_logo) {
         _logo = [[UIImageView alloc] initWithFrame:CGRectZero];
-        _logo.image = [[UIImage imageNamed:@"logo"] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        _logo.image = [UIImage imageNamed:@"logo"];
         _logo.contentMode = UIViewContentModeScaleAspectFit;
-        _logo.tintColor = [UIColor colorWithRed:192/255.0 green:222/255.0 blue:237/255.0 alpha:1];
     }
     return _logo;
 }
